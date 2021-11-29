@@ -66,6 +66,7 @@ p {
 div {
 	background-color: gray;
 }
+
 .col-xs-12 {
     width: 100%;
     border: 10px solid white;
@@ -76,12 +77,32 @@ h4 {
     font-weight: bold;
     position: relative;
 }
+.navbar-toggle:focus {
+	outline: 0;
+}
+.navbar-nav > li > a {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	line-height: 20px;
+}
+.navbar-nav {
+	margin: 7.5px -15px;
+}
+.hidden-xs{
+	overflow: right;
+}
+#nav-list {
+	margin-top: 10px;
+}
+#nav-list a:hover {
+	background-color: #E7E7E7;
+}
 
 @media (max-width: 768px) {
 	.navbar-toggle {
 		display: block;
 	}
-	div ul{
+	li a {
 		display:block;
 		position:fixed;
 		width: 100%;
@@ -90,3 +111,4 @@ h4 {
 		text-align: center;
 	}
 }
+
